@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="A simple resume template built with Flask, based on Start Bootstrap resume template.">
+  <meta name="author" content="Rodolfo Ferro <rodolfoferroperez@gmail.com>">
+
+  <title>Qi Zheng's Page</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+  <link href="static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="static/css/resume.css" rel="stylesheet">
+  <link rel="shortcut icon" href="https://avatars3.githubusercontent.com/u/36435547" type="image/x-icon">
+
+</head>
+
+<body id="page-top">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <span class="d-block d-lg-none text-white subheading">Qi Zheng</span>
+      <span class="d-none d-lg-block">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="static/img/QiZheng.jpg" alt="">
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#community">Community</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid p-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+      <div class="w-100">
+        <h1 class="mb-0">Qi
+          <span class="text-primary">Zheng</span>
+        </h1>
+        <div class="subheading mb-5">
+          BeiJing China
+          Tsinghua University
+          <br>
+          (86) 130 3226 3660
+          <a href="mailto:{{ data.profile.email }}">zhengq23@mails.tsinghua.edu.cn</a>
+        </div>
+        <p class="lead mb-5">
+          I am Qi Zheng.
+          <br>
+          This is a simple resume.
+        </p>
+        <div class="social-icons">
+<!--          <a href="{{ value }}" target="_blank">-->
+<!--            <i class="fab fa-{{ key }}"></i>-->
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
+      <div class="w-100">
+        <h2 class="mb-5">Skills</h2>
+
+        <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+        <ul class="list-inline dev-icons">
+          <li class="list-inline-item">
+            <i class="fab fa-python"></i>
+            <i class="fab fa-markdown"></i>
+            <i class="fab fa-github"></i>
+            <i class="fab fa-docker"></i>
+            <i class="fa-solid fa-database"></i>
+            <i class="fab fa-google"></i>
+            <i class="fab fa-apple"></i>
+            <i class="fab fa-linux"></i>
+          </li>
+        </ul>
+        
+        <div class="subheading mb-3">Extra skills / knowledge</div>
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Programming Languages: Python (NumPy, Pandas, Matplotlib), C++, SQL
+          </li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Software & Platforms: MySQL, Spark, Hive, Tableau, Jupyter Notebook, Rhino, Sketchup, CAD, Photoshop, Illustrator
+          </li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Machine Learning Skills: ML Models (Classification, Regression, Clustering), A/B Testing, Grid Search, Dimensionality Reduction (PCA)
+          </li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Language Skills: Native Chinese, Fluent English
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
+      <div class="w-100">
+        <h2 class="mb-5">Experience</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Data Scientist</h3>
+            <div class="subheading mb-3">ByteDance - TikTok</div>
+            <ul>
+              <li>
+                Modeled the supply and demand relationship in urban areas with a Sigmoid function in a project based on the LBS platform, applying robust regression to improve
+                model stability and prediction accuracy using machine learning techniques.
+              </li>
+              <li>
+                Conducted large-scale data extraction and analysis using Hive SQL, focusing on KPIs like UV and PV, and developed a real-time monitoring system with BI tools,
+                creating visual dashboards for quantitative insights impacting strategic decisions in overseas market expansion.
+              </li>
+              <li>
+                Designed and executed large-scale A/B tests for new merchants, optimizing resource allocation through rigorous sample size estimation and analysis of marginal contributions to GMV.
+              </li>
+              <li>
+                Analyzed user behavior data during critical holiday periods using regression models and time-series analysis, resulting in targeted marketing strategies that improved conversion rates.
+              </li>
+            </ul>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Jul.2024 - Present</span>
+          </div>
+        </div>
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">AI Large Model Data Analysis and Operations</h3>
+            <div class="subheading mb-3">Meituan</div>
+            <ul>
+              <li>
+                Participated in data cleaning and processing during SFT and RLHF phases, optimizing data processing efficiency through automated cleansing processes,
+                ensuring high-quality training data and reducing error rates by 15%.
+              </li>
+              <li>
+                Managed the RLHF team through a structured process design to optimize natural language generation models, resulting in a 6% improvement in performance through hyperparameter tuning.
+              </li>
+              <li>
+                Collaborated with the algorithm team to analyze the comprehensiveness and bias of pre-training data, enhancing model adaptability and fairness across diverse populations through statistical
+                analysis and clustering.
+              </li>
+            </ul>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">May.2024 - Jul.2024</span>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
+      <div class="w-100">
+        <h2 class="mb-5">Education</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Tsinghua University</h3>
+            <div class="subheading mb-3">Master of Architecture - Urban Human Factors Engineering</div>
+            <div>
+              Relevant Coursework: Extended Reality and AI-Driven Building Generation Methods, Urban Informatics II - Introduction to Smart Cities
+            </div>
+            <p>GPA: 3.91/4.0 — Rank: 26/119</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Sep.2023 - Jun.2025</span>
+          </div>
+        </div>
+
+         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Tianjin University</h3>
+            <div class="subheading mb-3">Bachelor of Architecture and Urban Planning</div>
+            <div>
+
+            </div>
+            <p>GPA: 3.90/4.0 — Rank: 1/186</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Sep.2018 - Jun.2023</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="community">
+      <div class="w-100">
+        <h2 class="mb-5">Community and social activity</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Student Union of Tianjin University</h3>
+            <div class="subheading mb-3">Chairman of the Student Union</div>
+            <div>
+              <ul>
+                <li>
+                  Organized and led 24 large-scale events, attracting over 10,000 participants through innovative
+                  planning and effective teamwork.
+                </li>
+                <li>
+                  Promoted inter-school collaboration by coordinating the ”Twin Cities” series with Tsinghua University
+                  and Tongji University, attended by over 3,000 people and lasting for a week, increasing the visibility and impact of the Student Union.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Tianjin University Football & Basketball Team</h3>
+              <div class="subheading mb-3">Team Captain</div>
+                <div>
+                  <ul>
+                    <li>
+                        A
+                    </li>
+                    <li>
+                        B
+                    </li>
+                  </ul>
+                </div>
+            </div>
+        </div>
+
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="projects">
+      <div class="w-100">
+        <h2 class="mb-5">Projects</h2>
+        <p>This section contains awesome projects that I've developed:</p>
+        <!-- Begins card -->
+        <div class="row">
+          <div class="col-md-4 mb-5">
+            <div class="card h-100">
+              <img src="static/img/flask-micro-template.png" class="card-img-top" alt="project title">
+              <div class="card-body">
+                <h3 class="card-title">project title</h3>
+                <h5 class="card-title">project subtitle</h5>
+                <p class="card-text">description</p>
+                <p>
+                  <span class="badge badge-pill badge-secondary">tag_A</span>
+                  <span class="badge badge-pill badge-secondary">tag_B</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
+      <div class="w-100">
+        <h2 class="mb-5">Awards &amp; Certifications</h2>
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            Top Ten Outstanding Student Models in Tianjin University - 2023
+          </li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            Gold Award in the ARCASIA Student Thesis (Graduation Project) Competition - 2023
+            <sup>
+              <a href='https://t-arch.tju.edu.cn/info/1105/2184.htm' target="_blank" class="badge badge-pill badge-danger">
+                Link
+                <i class="fa fa-external-link-alt text-light"></i>
+              </a>
+            </sup>
+          </li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            Undergraduate National Scholarship - 2022/2021/2019
+          </li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            Tianjin University Science and Technology Talent - 2021
+          </li>
+
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            First Prize of UIA-HYP CUP International Competition in Architectural Design - 2021
+            <sup>
+              <a href='https://www.tju.edu.cn/english/info/1010/5901.htm' target="_blank" class="badge badge-pill badge-danger">
+                Link
+                <i class="fa fa-external-link-alt text-light"></i>
+              </a>
+            </sup>
+          </li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            Excellence Award of TianZuo Cup Design Competition - 2021
+          </li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            Tianjin University School of Architecture Top Ten Youth - 2021
+          </li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            China Architecture Newcomer Competition TOP16 - 2021
+          </li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            Tianjin University Sports Advanced Individual - 2020
+          </li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            Outstanding Cadre of Tianjin University - 2020
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="static/vendor/jquery/jquery.min.js"></script>
+  <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="static/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="static/js/resume.min.js"></script>
+
+</body>
+
+</html>
