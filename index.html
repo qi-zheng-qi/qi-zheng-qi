@@ -54,10 +54,10 @@
           <a class="nav-link js-scroll-trigger" href="#community">Community</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+          <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+          <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
@@ -74,16 +74,21 @@
           <span class="text-primary">Zheng</span>
         </h1>
         <div class="subheading mb-5">
+          Tsinghua University,
           BeiJing China
-          Tsinghua University
           <br>
           (86) 130 3226 3660
           <a href="mailto:{{ data.profile.email }}">zhengq23@mails.tsinghua.edu.cn</a>
         </div>
         <p class="lead mb-5">
-          I am Qi Zheng.
           <br>
-          This is a simple resume.
+          I’m Zheng Qi, a graduate student from the Tsinghua University, focusing on Urban Human Factors Engineering.
+          My research interests revolve around data-driven methodologies, leveraging my solid foundation in statistics
+          and modeling to tackle complex urban challenges.
+          <br>
+          I’m well-versed in various analytical methods, including hypothesis testing and A/B testing, and I have a
+          wealth of experience in the realm of machine learning. My expertise spans across classification, regression,
+          and clustering techniques, with a particular proficiency in LBS (Location-Based Services) data analysis and visualization.
         </p>
         <div class="social-icons">
 <!--          <a href="{{ value }}" target="_blank">-->
@@ -106,7 +111,6 @@
             <i class="fab fa-markdown"></i>
             <i class="fab fa-github"></i>
             <i class="fab fa-docker"></i>
-            <i class="fa-solid fa-database"></i>
             <i class="fab fa-google"></i>
             <i class="fab fa-apple"></i>
             <i class="fab fa-linux"></i>
@@ -117,15 +121,16 @@
         <ul class="fa-ul mb-0">
           <li>
             <i class="fa-li fa fa-check"></i>
-            Programming Languages: Python (NumPy, Pandas, Matplotlib), C++, SQL
+            Programming Languages: Python (NumPy, Pandas, Matplotlib), Clickhouse, Spark, R, Javascript, C#, Tableau, SQL
           </li>
           <li>
             <i class="fa-li fa fa-check"></i>
-            Software & Platforms: MySQL, Spark, Hive, Tableau, Jupyter Notebook, Rhino, Sketchup, CAD, Photoshop, Illustrator
+            Skills: Statistics, A/B Testing, Machine Learning Models (Classification, Regression, Clustering),
+            LBS Data Analysis and Visualization (GIS), TensorFlow
           </li>
           <li>
             <i class="fa-li fa fa-check"></i>
-            Machine Learning Skills: ML Models (Classification, Regression, Clustering), A/B Testing, Grid Search, Dimensionality Reduction (PCA)
+            Computational Design/Analysis：Comfy UI, RHINO grasshopper, Unity AR. arcGIS, Photoshop
           </li>
           <li>
             <i class="fa-li fa fa-check"></i>
@@ -237,8 +242,16 @@
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
             <h3 class="mb-0">Student Union of Tianjin University</h3>
-            <div class="subheading mb-3">Chairman of the Student Union</div>
+            <div class="subheading mb-3">Chairman of the Student Union - Tianjin University, China</div>
             <div>
+              <div class="row">
+                <div class="col-md-5 mb-4">
+                  <img src="static/img/Chairman of the Student Union.jpg" alt="Chairman of the Student Union" width="100%" height="300px">
+                </div>
+                <div class="col-md-5 mb-4">
+                  <img src="static/img/Student Union Event.jpg" alt="Student Union Event" width="100%" height="300px">
+                </div>
+              </div>
               <ul>
                 <li>
                   Organized and led 24 large-scale events, attracting over 10,000 participants through innovative
@@ -255,15 +268,40 @@
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0">Tianjin University Football & Basketball Team</h3>
+            <h3 class="mb-0">Soccer & Basketball Team</h3>
               <div class="subheading mb-3">Team Captain</div>
                 <div>
+                  <div class="row">
+                    <div class="col-md-5 mb-4">
+                      <img src="static/img/soccer_1.jpg" alt="soccer person" width="100%" height="300px">
+                    </div>
+                    <div class="col-md-5 mb-4">
+                      <img src="static/img/soccer_3.jpg" alt="soccer team" width="100%" height="300px">
+                    </div>
+                    <div class="col-md-5 mb-4">
+                      <img src="static/img/basketball_1.jpg" alt="basketball person" width="100%" height="300px">
+                    </div>
+                    <div class="col-md-5 mb-4">
+                      <img src="static/img/basketball_2.png" alt="basketball team" width="100%" height="300px">
+                    </div>
+                  </div>
                   <ul>
                     <li>
-                        A
+                      The captain of soccer and basketball team at Tianjin University.
+                      Led the teams to participate in numerous competitions both on and off campus, made great efforts
+                      to unite the team, and possessed excellent leadership skills.
                     </li>
                     <li>
-                        B
+                        Soccer
+                        <br>
+                        Second Place - Tsinghua University Ma John Cup Football Tournament - 2023-2024
+                        <br>
+                        Champion - Tsinghua University Wenke Cup - 2023-2024
+                    </li>
+                    <li>
+                        Basketball
+                        <br>
+                        Second Place - Tsinghua University Ma John Cup Basketball match - 2023-2024
                     </li>
                   </ul>
                 </div>
@@ -275,48 +313,157 @@
 
     <hr class="m-0">
 
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="portfolio">
-      <div class="w-100">
-        <h2 class="mb-5">Portfolio</h2>
-        <div class="row">
-          <div class="col-md-5 mb-5">
-            <h3 class="card-title">Chengdu vs Chongqing At a Glance</h3>
-            <span class="badge badge-pill badge-secondary">Image Collection</span>
-            <span class="badge badge-pill badge-secondary">Humanities & scenery</span>
-            <iframe src="static/Chongdu vs Chongqing At a Glance.pdf" width="100%" height="600px"></iframe>
-          </div>
-          <div class="col-md-5 mb-5">
-            <h3 class="card-title">Chengdu vs Chongqing At a Glance</h3>
-            <span class="badge badge-pill badge-secondary">Architecture</span>
-            <iframe src="static/Chongdu vs Chongqing At a Glance.pdf" width="100%" height="600px"></iframe>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="projects">
       <div class="w-100">
         <h2 class="mb-5">Projects</h2>
         <p>This section contains awesome projects that I've developed:</p>
         <!-- Begins card -->
         <div class="row">
-          <div class="col-md-4 mb-5">
+
+          <div class="col-md-6 mb-6">
             <div class="card h-100">
-              <img src="static/img/flask-micro-template.png" class="card-img-top" alt="project title">
+
               <div class="card-body">
-                <h3 class="card-title">project title</h3>
-                <h5 class="card-title">project subtitle</h5>
-                <p class="card-text">description</p>
+                <h3 class="card-title">Human-Centric Experiments for Urban Decision-Making Support</h3>
+                <h5 class="card-title">Jun. 2024 - Present</h5>
+                <h5 class="card-title">THU Urban Human Factors Lab</h5>
+                <p class="card-text">
+                  Utilized machine learning and human-centric data (eye-tracking, EEG) to analyze urban spaces, designed Human-Centric
+                  Experiments to identify key points of human interest, supporting city projects like Beijing Winter Olympics
+                  Venues repurposing and Xiong'an New Area office design.
+                </p>
                 <p>
-                  <span class="badge badge-pill badge-secondary">tag_A</span>
-                  <span class="badge badge-pill badge-secondary">tag_B</span>
+                  <span class="badge badge-pill badge-secondary">Urban Design</span>
+                  <span class="badge badge-pill badge-secondary">Human Factors Analyze</span>
+                  <span class="badge badge-pill badge-secondary">Machine Learning</span>
                 </p>
               </div>
             </div>
           </div>
+
+          <div class="col-md-6 mb-6">
+            <div class="card h-100">
+              <img src="static/img/Geographic Information Recognition_1.png" class="card-img-top" alt="High-Precision Geographic Information Recognition">
+              <img src="static/img/Geographic Information Recognition_2.png" class="card-img-top" alt="High-Precision Geographic Information Recognition">
+              <div class="card-body">
+                <h3 class="card-title">High-Precision Geographic Information Recognition</h3>
+                <h5 class="card-title">Sep. 2023 - Mar. 2024</h5>
+                <h5 class="card-title">Core author of the project</h5>
+                <p class="card-text">
+                  In the field of remote sensing, the random forest algorithm has proven its effectiveness in machine
+                  learning classification tasks. My core research work focused on exploring how to combine medium-resolution
+                  landsat satellite data with the random forest algorithm to acquire and simulate long time series of land
+                  use and land cover changes in complex terrain areas. This research is significant for understanding and
+                  predicting land use changes, especially in complex terrain areas like Beijing. I used Landsat 8 satellite
+                  multispectral data and applied the random forest classification method to conduct an in-depth study on
+                  land use types in the Beijing area. I extracted spectral and texture information from Landsat 8 data to
+                  construct an optimal feature set, assessing the applicability of the random forest method in these areas.
+                </p>
+                <p>
+                  <span class="badge badge-pill badge-secondary">Land Use And Land Cover Change</span>
+                  <span class="badge badge-pill badge-secondary">Landsat Satellite</span>
+                  <span class="badge badge-pill badge-secondary">Random Forest Algorithm</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-6">
+            <div class="card h-100">
+              <img src="static/img/Computational Design Based on Audio_1.png" class="card-img-top" alt="Computational Design Based on Audio">
+              <img src="static/img/Computational Design Based on Audio_2.jpg" class="card-img-top" alt="Computational Design Based on Audio">
+              <div class="card-body">
+                <h3 class="card-title">Computational Design Based on Audio</h3>
+                <h5 class="card-title">Sep. 2023 - Mar. 2024</h5>
+                <h5 class="card-title">Core author of the project</h5>
+                <p class="card-text">
+                  Vienna, known as the world's capital of music, seems to have symphonies and melodies filling every street
+                  and alley. Inspired by this city, I designed an interactive musical installation based on computational design.
+                  It generates dynamic music waveforms and visual patterns through algorithms. The system can capture environmental
+                  sounds and interact with people's body movements, creating a flowing "container" of music, environment,
+                  and people. By using Fourier transform and time-domain signal analysis, the installation analyzes external
+                  audio signals in real-time and translates them into dynamic visual expressions, allowing participants
+                  to feel the dialogue between music and space.
+                </p>
+                <p>
+                  <span class="badge badge-pill badge-secondary">computational design</span>
+                  <span class="badge badge-pill badge-secondary">Dynamic music waveforms and visual patterns</span>
+                  <span class="badge badge-pill badge-secondary">Fourier transform and time-domain signal analysis</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+           <div class="col-md-6 mb-6">
+            <div class="card h-100">
+              <img src="static/img/Environmental Assessment_1.png" class="card-img-top" alt="Tianjin Metro Station Area">
+              <img src="static/img/Environmental Assessment_2.png" class="card-img-top" alt="Tianjin Metro Station Area">
+              <div class="card-body">
+                <h3 class="card-title">Environmental Assessment and Index Correlation Analysis of Tianjin Metro Station Area</h3>
+                <h5 class="card-title">Aug. 2022 - Mar. 2023</h5>
+                <h5 class="card-title">Project supported by: National Natural Science Foundation of China</h5>
+                <p class="card-text">
+                  This project aimed to address the environmental quality assessment of areas surrounding Tianjin Metro
+                  stations. We utilized deep learning techniques to analyze 30,000 street view images for semantic
+                  segmentation, which allowed us to understand the spatial distribution of various environmental elements.
+                  We then developed a set of statistical methods to score the environmental data, facilitating the
+                  quantification of environmental quality. The project resulted in the creation of a rule set to aid in
+                  urban environmental improvement, contributing to the sustainable development of urban spaces.
+                </p>
+                <p>
+                  <span class="badge badge-pill badge-secondary">Urban Environmental Improvement</span>
+                  <span class="badge badge-pill badge-secondary">Deep Learning</span>
+                  <span class="badge badge-pill badge-secondary">Semantic Segmentation</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
+
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="portfolio">
+      <div class="w-100">
+        <h2 class="mb-5">Portfolio</h2>
+        <div class="row">
+          <div class="col-md-5 mb-5">
+            <h3 class="card-title">Chengdu vs Chongqing At a Glance</h3>
+            <span class="badge badge-pill badge-secondary">Photo Album</span>
+            <span class="badge badge-pill badge-secondary">Humanities & scenery</span>
+            <iframe src="static/Chongdu vs Chongqing At a Glance.pdf" width="100%" height="600px"></iframe>
+          </div>
+
+          <div class="col-md-5 mb-5">
+            <h3 class="card-title">High-Precision Geographic Information Recognition</h3>
+            <span class="badge badge-pill badge-secondary">Project</span>
+            <img src="static/img/Geographic Information Recognition_1.png" class="card-img-top" alt="High-Precision Geographic Information Recognition">
+            <img src="static/img/Geographic Information Recognition_3.png" class="card-img-top" alt="High-Precision Geographic Information Recognition">
+            <img src="static/img/Geographic Information Recognition_3.png" class="card-img-top" alt="High-Precision Geographic Information Recognition">
+          </div>
+
+          <div class="col-md-5 mb-5">
+            <h3 class="card-title">Computational Design Based on Audio</h3>
+            <span class="badge badge-pill badge-secondary">Project</span>
+            <img src="static/img/Computational Design Based on Audio_1.png" class="card-img-top" alt="Computational Design Based on Audio">
+            <img src="static/img/Computational Design Based on Audio_2.jpg" class="card-img-top" alt="Computational Design Based on Audio">
+            <img src="static/img/Computational Design Based on Audio_3.jpg" class="card-img-top" alt="Computational Design Based on Audio">
+            <img src="static/img/Computational Design Based on Audio_4.png" class="card-img-top" alt="Computational Design Based on Audio">
+          </div>
+
+          <div class="col-md-5 mb-5">
+            <h3 class="card-title">Environmental Assessment and Index Correlation Analysis of Tianjin Metro Station Area</h3>
+            <span class="badge badge-pill badge-secondary">Project</span>
+            <img src="static/img/Environmental Assessment_1.png" class="card-img-top" alt="Tianjin Metro Station Area">
+            <img src="static/img/Environmental Assessment_2.png" class="card-img-top" alt="Tianjin Metro Station Area">
+            <img src="static/img/Environmental Assessment_3.png" class="card-img-top" alt="Tianjin Metro Station Area">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
 
     <hr class="m-0">
 
