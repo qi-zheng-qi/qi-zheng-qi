@@ -190,3 +190,22 @@ a {
 a:hover, a:focus, a:active {
   color: #223c8c;
 }
+
+.slider {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+.slider img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.slider img.active {
+    opacity: 1;
+}
